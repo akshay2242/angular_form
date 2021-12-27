@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: gray;
+}
+
+.loginpage{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    text-align: center;
+}
+.loginpage label{
+    color: white;
+    font-weight: bold;
+}
+
+.loginpage h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.loginpage input[type="text"],.loginpage input[type="password"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid white;
+    padding: 14px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25;
+}
+
+.loginpage input[type="text"]:focus, .loginpage input[type="password"]:focus{
+    width: 270px;
+    border-color: blue;
+}
+
+.loginpage button
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid white;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25;
+    cursor: pointer;
+}
+
+.loginpage button:hover{
+    background: blue;
+}
+
+.loginpage small{
+    color: white;
+}
+.inputvalue {
+    color: red;
+}

@@ -1,0 +1,21 @@
+<form #loginForm="ngForm" class="loginpage" (ngSubmit)=adminLogin(loginForm)>
+    <h1>Login</h1>
+    <hr>
+    <label for="username">Username:</label>
+    <input type="text" #username name="username" placeholder="Enter username" required ngModel>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" placeholder="Enter password" required ngModel>
+
+    <button>Login</button>
+    <small>Not a Register user?</small><a routerLink="#"> Signup</a>
+
+    <div class="inputvalue" *ngIf="isFormInvalid">
+        Please fill all fields
+    </div>
+    <div class="inputvalue" *ngIf="areCredentialsInvalid">
+        Please enter correct username or password
+    </div>
+
+</form>
+
